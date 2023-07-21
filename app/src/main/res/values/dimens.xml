@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="grid_left" format="float" type="dimen">0.05</item>
+    <item name="grid_right" format="float" type="dimen">0.95</item>
+
+</resources>
