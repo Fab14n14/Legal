@@ -145,6 +145,7 @@
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             tools:ignore="TextSizeCheck"
             tools:layout_editor_absoluteY="372dp" />
+
     </LinearLayout>
 
     <TextView
@@ -154,7 +155,7 @@
         android:fontFamily="@font/barlowbold"
         android:text="Documentación legal"
         android:textColor="@color/black"
-        android:textSize="40dp"
+        android:textSize="46dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.45"

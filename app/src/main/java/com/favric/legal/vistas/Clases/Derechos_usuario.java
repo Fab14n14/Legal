@@ -17,7 +17,10 @@ public class Derechos_usuario extends Base {
 
     private ImageView button1;
     private ImageView button2;
-    private PDFView pdfView ;
+    private PDFView pdfView;
+    private ImageView button3;
+
+    private ImageView button4;
 
     @SuppressLint("MissingInflatedId")
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,27 +36,19 @@ public class Derechos_usuario extends Base {
                 startActivity(intent);
             }
         });
-        button2 = findViewById(R.id.logoretro_usuario);
+        button2 = findViewById(R.id.btn_back);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Lógica para el botón 1
+                // Lógic for the  botón 2
                 Intent intent = new Intent(Derechos_usuario.this, MainActivity.class);
                 startActivity(intent);
             }
         });
-        Utils.loadPdf("derechos_usuario.pdf" , pdfView , this );
+        Utils.loadPdf("derechos_usuario.pdf", pdfView, this);
+
+
     }
 
 
-
-
-    // Nombre del archivo PDF en la carpeta "assets"
-
-
-    // Carga el archivo PDF desde la carpeta "assets"
-
 }
-
-
-

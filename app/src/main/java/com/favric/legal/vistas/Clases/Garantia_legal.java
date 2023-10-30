@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 
 import com.favric.legal.Clases.Base;
@@ -22,6 +23,10 @@ public class Garantia_legal extends Base {
     private PDFView pdfView;
     private ImageView button2;
 
+    private ImageView button3;
+    private ImageView button4;
+    private TextView text;
+
     @SuppressLint("MissingInflatedId")
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +35,7 @@ public class Garantia_legal extends Base {
 
         // Reemplaza "nombre_del_archivo.pdf" con la ubicación de tu archivo PDF
         Utils.loadPdf("monitoreo.pdf" , pdfView , this );
+        final int[] pageNumber = {0}; //start page number for pdf buttons
 
         button1 = findViewById(R.id.ButtonRetrocesoGarantia);
 
@@ -42,7 +48,7 @@ public class Garantia_legal extends Base {
                 startActivity(intent);
             }
         });
-        button2 = findViewById(R.id.logoretro_garantia);
+        button2 = findViewById(R.id.btn_back);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,6 +57,10 @@ public class Garantia_legal extends Base {
                 startActivity(intent);
             }
         });
+
+
+
+
 
     }
 
